@@ -21,7 +21,7 @@
 			<div class="container">
 				<header class="header row">
 					<div class="span9">
-						<h1>Bower components</h1>
+						<h1><a href="http://sindresorhus.com/bower-components/">Bower components</a></h1>
 						<h2>Discover <a href="http://bower.io">Bower</a> components</h2>
 					</div>
 					<span class="span3 promo">
@@ -36,7 +36,7 @@
 					</span>
 				</header>
 				<hr>
-				<section class="main">
+				<section id="main">
 					<div id="loading">
 						<p>Loading components...</p>
 					</div>
@@ -61,7 +61,7 @@
 	</body>
 	<script type="text/template" id="components-small-template">
 		<div class="span4">
-			<h4><%- title %></h4>
+			<h4><a href="?type=<%- url %>"><%- title %></a></h4>
 			<dl class="dl-horizontal">
 				<% _.each(components, function (el) { %>
 					<dt><a title="<%- el.description %>" href="<%- el.website %>"><%- el.name %></a></dt>

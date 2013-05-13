@@ -25,13 +25,20 @@ module.exports = function (grunt) {
 			options: {
 				jshintrc: '.jshintrc'
 			}
+		},
+		regarde: {
+			all: {
+				files: ['js/*.js'],
+				tasks: ['default']
+			}
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-regarde');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 
-	grunt.registerTask('default', 'concat');
+	grunt.registerTask('default', ['concat', 'regarde']);
 	grunt.registerTask('minify', ['concat', 'uglify']);
 };

@@ -99,7 +99,7 @@ a {
 	padding: 0 10px;
 }
 
-.main p {
+#main p {
 	text-align: center;
 }
 
@@ -121,7 +121,7 @@ a {
 	user-select: none;
 }
 
-#components h4 {
+#components h1, #components h4 {
 	text-align: center;
 }
 
